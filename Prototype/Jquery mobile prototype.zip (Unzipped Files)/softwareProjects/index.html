@@ -1,0 +1,380 @@
+<DOCTYPE html>
+<html>
+   <head>
+      <title> Helping Hand </title>
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <link href="mystyle.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+
+
+     <!-- page -->
+      <div data-role="page" id="home">
+         <div data-role="header">
+            <h1>Helping Hand</h1>
+         </div>
+         <div data-role="main" class-"ui-content">
+            <div id="logo_image">
+               <img src="images/HELPINGhand.png"
+                  alt="Logo"/>
+            </div>
+            <h1> Select your account </h1>
+            <h1> . </h1>
+            <a data-role="button" href="#parent">Parent</a>
+            <a data-role="button" href="#tutor">Tutor</a>
+            <h1> . </h1>
+         </div>
+         <div data-position="fixed" data-role="footer">
+            <h2>&copy; Helping Hand</h2>
+         </div>
+      </div>
+      <!-- /page -->
+
+
+      <!-- page -->
+      <div data-role="page" id="parent" >
+         <div data-role="header">
+            <h1>Helping Hand</h1>
+            <a data-role="button" href="#home">Back</a>
+         </div>
+         <div role="main" class="ui-content">
+            <h2 class="mc-text-center">Welcome Parent</h2>
+            <p class="mc-top-margin-1-5"><b>Existing Users</b></p>
+            <a href="#parent-sign-in" data-role="button">Sign In</a>
+            <p class="mc-top-margin-1-5"><b>Don't have an account?</b></p>
+            <a href="#parent-sign-up" data-role="button">Sign Up</a>
+            <p></p>
+         </div>
+      </div>
+      <!-- /page -->
+
+
+      <!-- page -->
+      <div data-role="page" id="tutor" >
+         <div data-role="header">
+            <h1>Helping Hand</h1>
+            <a data-role="button" href="#home">Back</a>
+         </div>
+         <div role="main" class="ui-content">
+            <h2 class="mc-text-center">Welcome Tutor</h2>
+            <p class="mc-top-margin-1-5"><b>Existing Users</b></p>
+            <a href="#tutor-sign-in" data-role="button">Sign In</a>
+            <p class="mc-top-margin-1-5"><b>Don't have an account?</b></p>
+            <a href="#tutor-sign-up" data-role="button">Sign Up</a>
+            <p></p>
+         </div>
+      </div>
+      <!-- /page -->
+
+
+      <!-- page -->
+      <div data-role="page" id="tutor-sign-up">
+         <div data-role="header" >
+            <h1>Helping Hand</h1>
+            <a href="#tutor" data-role="button">back</a>
+         </div>
+         <div role="main" class="ui-content">
+            <h3>Sign Up</h3>
+            <label for="txt-first-name">First Name</label>
+            <input type="text" name="txt-first-name" id="txt-first-name" value="">
+            <label for="txt-last-name">Last Name</label>
+            <input type="text" name="txt-last-name" id="txt-last-name" value="">
+            <label for="txt-email">Email Address</label>
+            <input type="text" name="txt-email" id="txt-email" value="">
+            <label for="txt-password">Password</label>
+            <input type="password" name="txt-password" id="txt-password" value="">
+            <label for="txt-password-confirm">Confirm Password</label>
+            <input type="password" name="txt-password-confirm" id="txt-password-confirm" value="">
+            <a data-role="button" href="#">Submit</a>
+         </div>
+      </div>
+      <!-- /page -->
+
+
+      <!-- page -->
+      <div data-role="page" id="parent-sign-up">
+         <div data-role="header" >
+            <h1>Helping Hand</h1>
+            <a href="#parent" data-role="button">back</a>
+         </div>
+         <div role="main" class="ui-content">
+            <h3>Sign Up</h3>
+            <label for="txt-first-name">First Name</label>
+            <input type="text" name="txt-first-name" id="txt-first-name" value="">
+            <label for="txt-last-name">Last Name</label>
+            <input type="text" name="txt-last-name" id="txt-last-name" value="">
+            <label for="txt-email">Email Address</label>
+            <input type="text" name="txt-email" id="txt-email" value="">
+            <label for="txt-password">Password</label>
+            <input type="password" name="txt-password" id="txt-password" value="">
+            <label for="txt-password-confirm">Confirm Password</label>
+            <input type="password" name="txt-password-confirm" id="txt-password-confirm" value="">
+            <a data-role="button" href="#PostAJob">Submit</a>
+         </div>
+      </div>
+      <!-- /page -->
+
+
+      <!-- page -->
+      <div data-role="page" id="tutor-sign-in">
+         <div data-role="header" >
+            <h1>Helping Hand</h1>
+            <a data-role="button" href="#tutor">Back</a>
+         </div>
+         <div role="main" class="ui-content">
+            <h3>Sign In</h3>
+            <label for="txt-email">Email Address</label>
+            <input type="text" name="txt-email" id="txt-email" value="">
+            <label for="txt-password">Password</label>
+            <input type="password" name="txt-password" id="txt-password" value="">
+            <fieldset data-role="controlgroup">
+            </fieldset>
+            <a data-role="button" href="#welcome-tutor">Submit</a>
+         </div>
+      </div>
+
+      </div><!-- /page -->
+
+
+<!-- start of page -->
+<div data-role="page" id="MyAccount">
+  <div data-role="header">
+    <h1>Helping Hand</h1>
+      <a data-role="button" href="#home">Sign out</a>
+    </div>
+    <div role="main" class="ui-content">
+      <h1>Your account</h1>
+      <div id="logo_image">
+         <img src="images/user.png"
+            alt="Logo"/>
+<p>User name: John Smith</p>
+<p>Email: johnsmith@googlemail.com</p>
+<p>Account type: premium</p>
+<p>Parent account</p>
+      </div>
+      <footer data-role="footer" data-position="fixed">
+         <nav data-role="navbar">
+            <ul>
+
+         <li><a href=  "#MyAccount"  >My Account</a></li>
+         <li><a href=     "#FindATutor"   >Find a tutor</a></li>
+         <li><a href=     "#PostAJob"    >Post a job</a></li>
+
+            </ul>
+         </nav>
+      </footer>
+    </div>
+  </div>
+<!-- end of page -->
+
+<!-- start of page -->
+<div data-role="page" id="FindATutor">
+  <div data-role="header">
+    <h1>Helping Hand</h1>
+      <a data-role="button" href="#home">Sign out</a>
+    </div>
+    <div role="main" class="ui-content">
+
+      <h1>Find a tutor</h1>
+
+        <li data-role="collapsible" data-iconpos="right" data-inset="false">
+          <h2>R.E</h2>
+          <ul data-role="listview">
+            <li><a href="#">John Andrews (5*)</a></li>
+            <li><a href="#">Mac Amos (4*)</a></li>
+            <li><a href="#">Lucy White (4*)</a></li>
+            <li><a href="#">Walter White (5*)</a></li>
+
+          </ul>
+        </li>
+
+        <li data-role="collapsible" data-iconpos="right" data-inset="false">
+          <h2>P.E</h2>
+          <ul data-role="listview">
+            <li><a href="#">John Andrews (5*)</a></li>
+            <li><a href="#">Mac Amos (4*)</a></li>
+            <li><a href="#">Lucy White (4*)</a></li>
+            <li><a href="#">Walter White (5*)</a></li>
+
+          </ul>
+        </li>
+
+        <li data-role="collapsible" data-iconpos="right" data-inset="false">
+          <h2>English</h2>
+          <ul data-role="listview">
+            <li><a href="#">John Andrews (5*)</a></li>
+            <li><a href="#">Mac Amos (4*)</a></li>
+            <li><a href="#">Lucy White (4*)</a></li>
+            <li><a href="#">Walter White (5*)</a></li>
+
+          </ul>
+        </li>
+
+        <li data-role="collapsible" data-iconpos="right" data-inset="false">
+          <h2>Computing</h2>
+          <ul data-role="listview">
+            <li><a href="#">John Andrews (5*)</a></li>
+            <li><a href="#">Mac Amos (4*)</a></li>
+            <li><a href="#">Lucy White (4*)</a></li>
+            <li><a href="#">Walter White (5*)</a></li>
+
+          </ul>
+        </li>
+
+        <li data-role="collapsible" data-iconpos="right" data-inset="false">
+          <h2>Science</h2>
+          <ul data-role="listview">
+            <li><a href="#">John Andrews (5*)</a></li>
+            <li><a href="#">Mac Amos (4*)</a></li>
+            <li><a href="#">Lucy White (4*)</a></li>
+            <li><a href="#">Walter White (5*)</a></li>
+
+          </ul>
+        </li>
+
+        <li data-role="collapsible" data-iconpos="right" data-inset="false">
+          <h2>Maths</h2>
+          <ul data-role="listview">
+            <li><a href="#">John Andrews (5*)</a></li>
+            <li><a href="#">Mac Amos (4*)</a></li>
+            <li><a href="#">Lucy White (4*)</a></li>
+            <li><a href="#">Walter White (5*)</a></li>
+
+          </ul>
+        </li>
+
+
+        </div>
+        <footer data-role="footer" data-position="fixed">
+           <nav data-role="navbar">
+              <ul>
+
+           <li><a href=  "#MyAccount"  >My Account</a></li>
+           <li><a href=     "#FindATutor"   >Find a tutor</a></li>
+           <li><a href=     "#PostAJob"    >Post a job</a></li>
+
+              </ul>
+           </nav>
+        </footer>
+
+
+
+    </div>
+  </div>
+<!-- end of page -->
+
+      <!-- page -->
+      <div data-role="page" id="parent-sign-in">
+         <div data-role="header" >
+            <h1>Helping Hand</h1>
+            <a data-role="button" href="#parent">Back</a>
+         </div>
+         <div role="main" class="ui-content">
+            <h3>Sign In</h3>
+            <label for="txt-email">Email Address</label>
+            <input type="text" name="txt-email" id="txt-email" value="">
+            <label for="txt-password">Password</label>
+            <input type="password" name="txt-password" id="txt-password" value="">
+            <fieldset data-role="controlgroup">
+            </fieldset>
+            <a data-role="button" href="#PostAJob">Submit</a>
+         </div>
+      </div>
+      </div><!-- /page -->
+
+      <!-- page -->
+      <div data-role="page" id="Thankyou">
+         <div data-role="header" >
+            <h1>Helping Hand</h1>
+            <a data-role="button" href="#parent">Back</a>
+         </div>
+         <div role="main" class="ui-content">
+            <h1>Thank you for your post!</h1>
+            <p>A tutor will reach you very soon</p>
+         </div>
+         <footer data-role="footer" data-position="fixed">
+            <nav data-role="navbar">
+               <ul>
+
+            <li><a href=  "#MyAccount"  >My Account</a></li>
+            <li><a href=     "#FindATutor"   >Find a tutor</a></li>
+            <li><a href=      "#PostAJob"   >Post a job</a></li>
+
+               </ul>
+            </nav>
+         </footer>
+      </div>
+      </div><!-- /page -->
+
+
+      <!-- page -->
+      <div data-role="page" id="PostAJob">
+        <div data-role="header">
+          <h1>Helping Hand</h1>
+          <a data-role="button" href="#home">Sign out</a>
+        </div>
+        <div role="main" class="ui-content">
+          <h1>Welcome parent</h1>
+
+          <label for="textarea-a">In a few words, what are you looking for:</label>
+<textarea name="textarea" id="textarea-a">
+
+</textarea>
+
+
+
+   <label for="select-native-1">Subject:</label>
+<select name="select-native-1" id="select-native-1">
+ <option value="1">Maths</option>
+ <option value="2">English</option>
+ <option value="3">Science</option>
+ <option value="4">Computing</option>
+</select>
+
+<label for="select-native-1">Age of child:</label>
+<select name="select-native-1" id="select-native-1">
+<option value="1">5</option>
+<option value="2">6</option>
+<option value="3">7</option>
+<option value="4">8</option>
+</select>
+
+
+
+<label for="basic">Name of child:</label>
+<input type="text" name="name" id="basic" value=""  />
+
+<a data-role="button" href="#Thankyou">Post</a>
+
+<footer data-role="footer" data-position="fixed">
+   <nav data-role="navbar">
+      <ul>
+
+   <li><a href=  "#MyAccount"  >My Account</a></li>
+   <li><a href=     "#FindATutor"   >Find a tutor</a></li>
+   <li><a href=      "#PostAJob"   >Post a job</a></li>
+
+      </ul>
+   </nav>
+</footer>
+
+        </div>
+        <!-- /page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </body>
+</html>
